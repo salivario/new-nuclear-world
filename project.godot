@@ -17,6 +17,7 @@ config/features=PackedStringArray("4.5", "C#", "Mobile")
 [autoload]
 
 Database="*res://main/db/database.tscn"
+UserSession="*res://UserSession.cs"
 
 [dotnet]
 
