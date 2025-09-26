@@ -1,0 +1,161 @@
+[gd_scene load_steps=10 format=3 uid="uid://6ejfu6wn3kti"]
+
+[ext_resource type="Script" uid="uid://ce65bmb60b1e2" path="res://main/interface/Register.cs" id="1_xsomp"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xsomp"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.8392157, 1, 0.8235294, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w2al1"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.8392157, 1, 0.8235294, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_clvuc"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.8392157, 1, 0.8235294, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c0i7a"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.8392157, 1, 0.8235294, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qy4tq"]
+bg_color = Color(0.60297424, 0.99999934, 0.5749796, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qeixg"]
+bg_color = Color(0.6039216, 1, 0.5764706, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_md2a6"]
+bg_color = Color(0.6039216, 1, 0.5764706, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_txbmk"]
+bg_color = Color(0.12955844, 0.1295585, 0.12955838, 1)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xsomp")
+
+[node name="Panel" type="Panel" parent="."]
+z_index = -1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+layout_mode = 0
+offset_left = 430.0
+offset_top = 150.0
+offset_right = 730.0
+offset_bottom = 187.0
+alignment = 1
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.3259157, 0.9999998, 0.29823142, 1)
+theme_override_font_sizes/font_size = 27
+text = "NEW NUCLEAR WORLD"
+horizontal_alignment = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -146.0
+offset_top = -102.0
+offset_right = 154.0
+offset_bottom = 34.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="LoginField" type="LineEdit" parent="Panel/VBoxContainer2"]
+layout_mode = 2
+theme_override_colors/font_placeholder_color = Color(0, 0.5019608, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_xsomp")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w2al1")
+placeholder_text = "Login"
+
+[node name="EmailField" type="LineEdit" parent="Panel/VBoxContainer2"]
+layout_mode = 2
+theme_override_colors/font_placeholder_color = Color(0, 0.5019608, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_xsomp")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w2al1")
+placeholder_text = "Email"
+
+[node name="PasswordField" type="LineEdit" parent="Panel/VBoxContainer2"]
+layout_mode = 2
+theme_override_colors/font_placeholder_color = Color(0, 0.5019608, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_clvuc")
+theme_override_styles/focus = SubResource("StyleBoxFlat_c0i7a")
+placeholder_text = "Password"
+
+[node name="RepeatPasswordField" type="LineEdit" parent="Panel/VBoxContainer2"]
+layout_mode = 2
+theme_override_colors/font_placeholder_color = Color(0, 0.5019608, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_xsomp")
+theme_override_styles/focus = SubResource("StyleBoxFlat_w2al1")
+placeholder_text = "Repeet password"
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="Panel"]
+layout_mode = 0
+offset_left = 430.0
+offset_top = 380.0
+offset_right = 730.0
+offset_bottom = 442.0
+
+[node name="Create" type="Button" parent="Panel/VBoxContainer3"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1.9086851e-06, 0.083176754, 0.00033888262, 1)
+theme_override_colors/font_hover_color = Color(0, 0.08235294, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_qy4tq")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_qeixg")
+theme_override_styles/hover = SubResource("StyleBoxFlat_md2a6")
+text = "Create account"
+
+[node name="ButtonAuto" type="Button" parent="Panel/VBoxContainer3"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0.5019608, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0.5019608, 0, 1)
+theme_override_styles/pressed = SubResource("StyleBoxFlat_qeixg")
+theme_override_styles/hover = SubResource("StyleBoxFlat_txbmk")
+text = "Autorisation"

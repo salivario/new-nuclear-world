@@ -1,0 +1,145 @@
+[gd_scene load_steps=10 format=3 uid="uid://2idu7mnsni1y"]
+
+[ext_resource type="Script" uid="uid://bvmwj3jflxqt1" path="res://main/interface/FirstMenu.cs" id="1_embwg"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_embwg"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.8392157, 1, 0.8235294, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iaxh8"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.8392157, 1, 0.8235294, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dipv6"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.8392157, 1, 0.8235294, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_up6fx"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.8392157, 1, 0.8235294, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wtpdu"]
+bg_color = Color(0.60297424, 0.99999934, 0.5749796, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8t1ul"]
+bg_color = Color(0.6039216, 1, 0.5764706, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8gilb"]
+bg_color = Color(0.6039216, 1, 0.5764706, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pq08g"]
+bg_color = Color(0.12955844, 0.1295585, 0.12955838, 1)
+
+[node name="firstMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_embwg")
+
+[node name="Panel" type="Panel" parent="."]
+z_index = -1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -146.0
+offset_right = 154.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="Panel/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_placeholder_color = Color(0, 0.5019608, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_embwg")
+theme_override_styles/focus = SubResource("StyleBoxFlat_iaxh8")
+placeholder_text = "Login"
+
+[node name="LineEdit2" type="LineEdit" parent="Panel/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_placeholder_color = Color(0, 0.5019608, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_dipv6")
+theme_override_styles/focus = SubResource("StyleBoxFlat_up6fx")
+placeholder_text = "Password"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Panel"]
+layout_mode = 0
+offset_left = 430.0
+offset_top = 150.0
+offset_right = 727.0
+offset_bottom = 187.0
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer2"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.3259157, 0.9999998, 0.29823142, 1)
+theme_override_font_sizes/font_size = 27
+text = "NEW NUCLEAR WORLD"
+horizontal_alignment = 1
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="Panel"]
+layout_mode = 0
+offset_left = 430.0
+offset_top = 380.0
+offset_right = 730.0
+offset_bottom = 442.0
+
+[node name="Button" type="Button" parent="Panel/VBoxContainer3"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(1.9086851e-06, 0.083176754, 0.00033888262, 1)
+theme_override_colors/font_hover_color = Color(0, 0.08235294, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_wtpdu")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8t1ul")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8gilb")
+text = "Enter"
+
+[node name="Button2" type="Button" parent="Panel/VBoxContainer3"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0.5019608, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0.5019608, 0, 1)
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8t1ul")
+theme_override_styles/hover = SubResource("StyleBoxFlat_pq08g")
+text = "Registration"

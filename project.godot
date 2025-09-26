@@ -11,8 +11,12 @@ config_version=5
 [application]
 
 config/name="New Nuclear World"
-run/main_scene="res://first_menu.tscn"
+run/main_scene="uid://2idu7mnsni1y"
 config/features=PackedStringArray("4.5", "C#", "Mobile")
+
+[autoload]
+
+Database="*res://main/db/database.tscn"
 
 [dotnet]
 
