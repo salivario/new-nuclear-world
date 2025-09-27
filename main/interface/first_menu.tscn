@@ -91,14 +91,14 @@ grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
 
-[node name="LineEdit" type="LineEdit" parent="Panel/VBoxContainer"]
+[node name="LoginField" type="LineEdit" parent="Panel/VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_placeholder_color = Color(0, 0.5019608, 0, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_embwg")
 theme_override_styles/focus = SubResource("StyleBoxFlat_iaxh8")
 placeholder_text = "Login"
 
-[node name="LineEdit2" type="LineEdit" parent="Panel/VBoxContainer"]
+[node name="PasswordField" type="LineEdit" parent="Panel/VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_placeholder_color = Color(0, 0.5019608, 0, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_dipv6")
@@ -126,7 +126,7 @@ offset_top = 380.0
 offset_right = 730.0
 offset_bottom = 442.0
 
-[node name="Button" type="Button" parent="Panel/VBoxContainer3"]
+[node name="EnterButton" type="Button" parent="Panel/VBoxContainer3"]
 custom_minimum_size = Vector2(300, 0)
 layout_mode = 2
 theme_override_colors/font_color = Color(1.9086851e-06, 0.083176754, 0.00033888262, 1)
@@ -136,7 +136,7 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_8t1ul")
 theme_override_styles/hover = SubResource("StyleBoxFlat_8gilb")
 text = "Enter"
 
-[node name="Button2" type="Button" parent="Panel/VBoxContainer3"]
+[node name="ButtonReg" type="Button" parent="Panel/VBoxContainer3"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0.5019608, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0.5019608, 0, 1)
