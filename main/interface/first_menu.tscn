@@ -1,6 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://2idu7mnsni1y"]
+[gd_scene load_steps=12 format=3 uid="uid://2idu7mnsni1y"]
 
 [ext_resource type="Script" uid="uid://bvmwj3jflxqt1" path="res://main/interface/FirstMenu.cs" id="1_embwg"]
+[ext_resource type="Texture2D" uid="uid://c7f1k45jcipxo" path="res://main/assets/main/background_main_menu.png" id="2_dipv6"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_clvuc"]
+texture = ExtResource("2_dipv6")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_embwg"]
 bg_color = Color(0, 0, 0, 1)
@@ -78,6 +82,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_clvuc")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
 layout_mode = 1
@@ -116,7 +121,7 @@ offset_bottom = 187.0
 layout_mode = 2
 theme_override_colors/font_color = Color(0.3259157, 0.9999998, 0.29823142, 1)
 theme_override_font_sizes/font_size = 27
-text = "NEW NUCLEAR WORLD"
+text = "TALES FROM KRIJOPIL"
 horizontal_alignment = 1
 
 [node name="VBoxContainer3" type="VBoxContainer" parent="Panel"]

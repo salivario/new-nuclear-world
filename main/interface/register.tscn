@@ -1,6 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://6ejfu6wn3kti"]
+[gd_scene load_steps=12 format=3 uid="uid://6ejfu6wn3kti"]
 
 [ext_resource type="Script" uid="uid://ce65bmb60b1e2" path="res://main/interface/Register.cs" id="1_xsomp"]
+[ext_resource type="Texture2D" uid="uid://c7f1k45jcipxo" path="res://main/assets/main/background_main_menu.png" id="2_w2al1"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_clvuc"]
+texture = ExtResource("2_w2al1")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xsomp"]
 bg_color = Color(0, 0, 0, 1)
@@ -78,6 +82,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_clvuc")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
 layout_mode = 0
