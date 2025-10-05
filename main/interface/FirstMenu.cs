@@ -12,7 +12,7 @@ public partial class FirstMenu : Control
 
 	public override void _Ready()
 	{
-		_usernameField = GetNode<LineEdit>("Panel/VBoxContainer/LoginField");
+		_usernameField = GetNode<LineEdit>("Panel/VBoxContainer4/LoginField");
 		_passwordField = GetNode<LineEdit>("Panel/VBoxContainer/PasswordField");
 		_loginButton = GetNode<Button>("Panel/VBoxContainer3/EnterButton");
 		_registerButton = GetNode<Button>("Panel/VBoxContainer3/ButtonReg");
@@ -30,8 +30,8 @@ public partial class FirstMenu : Control
 		{
 			GD.Print($"✅ Успешный вход: {username}");
 			// Загружаем основную сцену игры
-			//var mainScene = GD.Load<PackedScene>("res://main/game/main_scene.tscn");
-			//GetTree().ChangeSceneToPacked(mainScene);
+			var mainScene = GD.Load<PackedScene>("res://main/game/main_scene.tscn");
+			GetTree().ChangeSceneToPacked(mainScene);
 		}
 		else
 		{

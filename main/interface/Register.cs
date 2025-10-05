@@ -14,8 +14,8 @@ public partial class Register : Control
 	{
 		_loginField = GetNode<LineEdit>("Panel/VBoxContainer2/LoginField");
 		_emailField = GetNode<LineEdit>("Panel/VBoxContainer2/EmailField");
-		_passwordField = GetNode<LineEdit>("Panel/VBoxContainer2/PasswordField");
-		_repeatPasswordField = GetNode<LineEdit>("Panel/VBoxContainer2/RepeatPasswordField");
+		_passwordField = GetNode<LineEdit>("Panel/VBoxContainer4/PasswordField");
+		_repeatPasswordField = GetNode<LineEdit>("Panel/VBoxContainer4/RepeatPasswordField");
 
 		_createButton = GetNode<Button>("Panel/VBoxContainer3/Create");
 		_autoButton = GetNode<Button>("Panel/VBoxContainer3/ButtonAuto");
